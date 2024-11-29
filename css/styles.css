@@ -1,0 +1,215 @@
+
+body {
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+img {
+    max-width: 100%; /* 確保圖片不會超出容器寬度 */
+    height: auto; /* 保持圖片比例 */
+    display: block; /* 去掉圖片底部的空白間隙 */
+    margin: 0 auto; /* 讓圖片置中，選擇性加入 */
+}
+
+
+h1 {
+    color: #66bfbf;
+    font-size: 3.8rem;
+    line-height: 1.0;
+    /* rem 代表忽略父層的大小設置 */
+    /* 寫90px，用戶改變頁面百分比會跑掉 */
+    /* or /0.16 = 562.5% */
+    /* or /16 = 5.625em; */
+    margin: 40px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+}
+
+h2 {
+    color: #66bfbf;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: normal; */
+    padding-bottom: 10px;
+}
+
+
+h3 {
+    color: #11999e;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* div {
+    background-color: #E4F9F5;
+} */
+
+p {
+    line-height: 2;
+}
+
+
+hr {
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #eaf6f6;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    background-color: #66bfbf; 
+    padding: 9px 0; /* 導航欄上下內距 */
+    position: sticky; 
+    top: 0;
+    z-index: 1000; /* 確保導航欄位於最上層 */
+    line-height: 1.0; 
+}
+
+.nav-link {
+    color: #ffffff; /* 文字顏色 */
+    text-decoration: none; /* 去掉超連結底線 */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0rem; /* 增大字體大小 */
+    margin: 0 20px; /* 按鈕之間的間距 */
+    padding: 10px 20px; /* 增加內部邊距 */
+    background-color: #11999e; /* 按鈕背景色 */
+    border-radius: 5px; /* 方形背景塊的圓角（5px） */
+    transition: background-color 0.3s, transform 0.2s; /* 動畫過渡效果 */
+}
+
+.nav-link:hover {
+    background-color: #30e3cb; /* 滑鼠懸停時的背景色 */
+    color: #ffffff; /* 滑鼠懸停時的文字色 */
+    transform: scale(1.05); /* 滑鼠懸停時略微放大 */
+}
+
+
+
+.top-container {
+    background-color: #cff3f7;
+    position: relative;
+    padding-top: 90px;
+}
+
+
+.middle-container{
+    margin: 100px 0;
+}
+
+
+.bottom-container{
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
+}  
+
+
+.profile-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+ 
+
+/* .intro {
+    width:60%;
+    margin: auto;
+    line-height: 2.2;
+} */
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+
+.bottom-cloud {
+    position: absolute;
+    left: 220px;
+    bottom: 300px;
+}
+
+.mountain {
+    width: 500px;
+    height: 350px;
+}
+
+.left-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.right-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+
+/* 
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+} */
+
+
+.btn {
+    background: hwb(196 38% 7%);
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+    text-decoration: none;
+  }
+
+
+  .footer-link {
+    color: #eaf6f6;
+    font-size: 1.25rem;
+    padding: 20px 0;
+  }
+
+
+  .copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+  }
